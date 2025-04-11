@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Calculator</title>
+</head>
+<body style="text-align:center; margin-top:50px;">
+  <h2>Python Calculator</h2>
+  <form method="POST">
+    <input type="number" name="num1" placeholder="Enter first number" required>
+    <input type="number" name="num2" placeholder="Enter second number" required>
+    <button type="submit">Add</button>
+  </form>
+
+  {% if result is not none %}
+    <h3>Result: {{ result }}</h3>
+  {% endif %}
+
+  <br>
+  <a href="/">Back to Home</a>
+</body>
+</html>
